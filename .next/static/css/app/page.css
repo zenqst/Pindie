@@ -1,0 +1,366 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/components/Banner/Banner.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.Banner_banner__PUe_2 {
+	padding: 112px 40px 112px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+	gap: 20px;
+}
+
+.Banner_banner__title__MP_Rt {
+	font-size: 42px;
+	margin-bottom: 20px;
+	max-width: 708px;
+}
+
+.Banner_banner__text-block__7jHlu {
+	line-height: 1.6;
+	margin-bottom: 40px;
+	padding-left: 80px;
+	max-width: 630px;
+	letter-spacing: 1.5;
+}
+
+.Banner_banner__link__Z0lMZ {
+	display: block;
+	margin-left: 80px;
+}
+
+.Banner_banner__image__UxOLs {
+	width: 100%;
+	max-width: 228px;
+	box-shadow: 8px 8px 0 black;
+	margin-right: 40px;
+	align-self: center;
+	justify-self: center;
+}
+
+@media (max-width: 1440px) {
+	.Banner_banner__title__MP_Rt {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.Banner_banner__PUe_2 {
+		grid-template-columns: 1fr;
+		padding: 80px 40px;
+	}
+
+	.Banner_banner__title__MP_Rt {
+		width: 70%;
+		max-width: 100%;
+	}
+
+	.Banner_banner__text-block__7jHlu {
+		max-width: 100%;
+	}
+
+	.Banner_banner__image__UxOLs {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.Banner_banner__text-block__7jHlu {
+		padding-left: 0;
+	}
+	.Banner_banner__link__Z0lMZ {
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 650px) {
+	.Banner_banner__PUe_2 {
+		padding: 80px 14px;
+	}
+}
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/components/CardsList/CardsList.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+.CardsList_list-section__WRokJ:not(:first-of-type) {
+	margin-top: 40px;
+}
+
+.CardsList_list-section__title__kCJSX {
+	font-size: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-bottom: 4px solid black;
+	padding: 20px 40px 14px;
+	position: relative;
+}
+
+.CardsList_list-section__title__kCJSX::before {
+	content: '';
+	position: absolute;
+	top: 6px;
+	left: 25px;
+	background-color: #ffff00;
+	width: 60px;
+	height: 45px;
+	z-index: -1;
+}
+
+.CardsList_cards-list__k5P9j {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+	grid-gap: 45px;
+	gap: 45px;
+	padding: 68px 120px;
+}
+
+.CardsList_card-list__link__hTUog {
+	display: flex;
+	height: 100%;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.CardsList_card-list__link__hTUog:hover {
+	background-color: black;
+}
+
+.CardsList_errorText___WkIt {
+	text-align: center;
+	margin: 100px 0px;
+}
+
+@media (max-width: 1440px) {
+	.CardsList_list-section__title__kCJSX {
+		font-size: 26px;
+	}
+
+	.CardsList_list-section__title__kCJSX::before {
+		width: 55px;
+		height: 42px;
+	}
+
+	.CardsList_cards-list__k5P9j {
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		gap: 40px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.CardsList_cards-list__k5P9j {
+		padding: 68px 40px;
+		gap: 30px;
+	}
+}
+
+@media (max-width: 650px) {
+	.CardsList_list-section__title__kCJSX {
+		padding: 20px 14px 14px;
+	}
+
+	.CardsList_list-section__title__kCJSX::before {
+		left: 6px;
+	}
+
+	.CardsList_cards-list__k5P9j {
+		padding: 68px 14px;
+	}
+}
+
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/components/Card/Card.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+.Card_card__CWDle {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.Card_card__CWDle:hover {
+	background-color: #ffff00;
+	transform: translate(-8px, -8px);
+}
+
+.Card_card__image__4mueK {
+	width: 100%;
+	aspect-ratio: 375 / 250;
+	object-fit: cover;
+	object-position: center;
+	border-bottom: 1px solid black;
+}
+
+.Card_card__content-block__wBJdj {
+	padding: 16px 16px 35px;
+	border: 4px solid black;
+	flex-grow: 1;
+	display: grid;
+}
+
+.Card_card__title__GTs84 {
+	font-size: 30px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.Card_card__description__D5I82 {
+	line-height: 1.1;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.Card_card__info-container__4sDHi {
+	align-self: end;
+}
+
+.Card_card__author__u6zAO {
+	font-size: 20px;
+}
+
+.Card_card__author__u6zAO .Card_card__accent__yghaH {
+	font-family: 'Rubic One', sans-serif;
+}
+
+.Card_card__votes__P29Ky {
+	font-size: 20px;
+}
+
+.Card_card__votes__P29Ky .Card_card__accent__yghaH {
+	font-family: 'Rubic One', sans-serif;
+	display: inline-block;
+	padding: 4px 17px 25px 4px;
+	background-color: black;
+	color: white;
+}
+
+@media (max-width: 1440px) {
+	.Card_card__content-block__wBJdj {
+		padding: 16px 16px 26px;
+	}
+
+	.Card_card__title__GTs84 {
+		font-size: 20px;
+	}
+
+	.Card_card__description__D5I82 {
+		font-size: 16px;
+	}
+
+	.Card_card__author__u6zAO {
+		font-size: 16px;
+	}
+
+	.Card_card__votes__P29Ky {
+		font-size: 16px;
+	}
+
+	.Card_card__votes__P29Ky .Card_card__accent__yghaH {
+		padding: 4px 15px 15px 4px;
+	}
+}
+
+/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/components/Promo/Promo.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************/
+.Promo_promo__tR27v {
+	background-color: #2400ff;
+	color: white;
+	padding: 40px 260px;
+	grid-gap: 20px;
+	gap: 20px;
+	margin: 40px auto 0;
+	border-top: 4px solid black;
+	border-bottom: 4px solid black;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+
+.Promo_promo__title__q2Ekr {
+	font-size: 42px;
+	margin-bottom: 26px;
+	line-height: 1;
+	width: -moz-fit-content;
+	width: fit-content;
+}
+
+.Promo_promo__description__cgn7e {
+	line-height: 1.5;
+	font-size: 26px;
+	font-weight: bold;
+	margin-bottom: 26px;
+	max-width: 553px;
+	width: 80%;
+	margin-left: 108px;
+}
+
+.Promo_promo__image__X0h3c {
+	align-self: end;
+	justify-self: end;
+}
+
+.Promo_promo__button__W82nm {
+	color: white;
+	border-color: white;
+	margin-left: 108px;
+}
+
+.Promo_promo__button__W82nm:hover {
+	background-color: white;
+	color: #2400ff;
+}
+
+.Promo_promo-code__7c8iH {
+	color: yellow;
+}
+
+.Promo_promo__button__W82nm:has(.Promo_promo-code__7c8iH):hover {
+	background-color: transparent;
+	cursor: default;
+}
+
+@media (max-width: 1440px) {
+	.Promo_promo__tR27v {
+		padding: 40px 120px;
+	}
+
+	.Promo_promo__title__q2Ekr {
+		font-size: 30px;
+	}
+	.Promo_promo__description__cgn7e {
+		font-size: 20px;
+		margin-left: 90px;
+	}
+	.Promo_promo__button__W82nm {
+		margin-left: 90px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.Promo_promo__tR27v {
+		padding: 80px 40px;
+	}
+}
+
+@media (max-width: 768px) {
+	.Promo_promo__description__cgn7e {
+		margin-left: 0;
+	}
+
+	.Promo_promo__button__W82nm {
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 650px) {
+	.Promo_promo__tR27v {
+		grid-template-columns: 1fr;
+		gap: 80px;
+		padding: 80px 14px;
+	}
+
+	.Promo_promo__image__X0h3c {
+		max-width: 500px;
+		justify-self: start;
+	}
+}
+
