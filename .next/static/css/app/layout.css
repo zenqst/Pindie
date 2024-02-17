@@ -1,167 +1,156 @@
-/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/components/Footer/Footer.module.css ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************/
-.Footer_footer__YgQC9 {
-	background-color: black;
-	border-top: 4px solid white;
-	border-left: 14px solid white;
-	color: white;
-	padding: 0px 115px 0px 24px;
-	display: flex;
-	justify-content: space-between;
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/components/AuthForm/AuthForm.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+.AuthForm_form__SAM4_ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.Footer_footer__logo__Mmgbk {
-	display: block;
-	padding: 20px 0px;
-	width: 100%;
-	align-self: center;
+.AuthForm_form__title__bh8UF {
+  margin-bottom: 24px;
+  font-size: 36px;
 }
 
-.Footer_footer__logo-name__OLRT5 {
-	font-family: 'Rubic One', sans-serif;
-	text-transform: uppercase;
-	font-size: 26px;
+.AuthForm_form__fields__9NEi0 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-.Footer_footer__YgQC9 .Footer_social-list__link__x1pN7 {
-	text-transform: uppercase;
-	font-weight: bold;
-	aspect-ratio: 1 / 1;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 30px;
-	border: 0;
-	border-right: 4px solid white;
-	color: white;
-	height: 100%;
-	border-top: 0;
-	border-bottom: 0;
+.AuthForm_form__field__8_VIY {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
-.Footer_footer__YgQC9 .Footer_social-list__link__x1pN7:hover {
-	background-color: #ffff00;
-	color: black;
+.AuthForm_form__field-title__KiNGx {
+  margin-bottom: 8px;
+  font-size: 22px;
 }
 
-.Footer_social-list__fwHMn {
-	display: flex;
-	border-left: 14px solid white;
+.AuthForm_form__field-input__rnkmC {
+  width: 100%;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 16px 24px;
+  font-family: inherit;
+  font-size: 22px;
 }
 
-/*!*************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./app/globals.css ***!
-  \*************************************************************************************************************************************************************************************************************************************************************/
-@font-face {
-	font-family: 'Anonymous Pro';
-	src: url(/fonts/anonymouspro-regular.woff);
-	font-weight: normal;
-	font-display: swap;
+.AuthForm_form__actions__QgxEI {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 8px;
 }
 
-@font-face {
-	font-family: 'Rubic One';
-	src: url(/fonts/rubic-one.woff);
-	font-display: swap;
+.AuthForm_form__reset__t8DRW {
+  font-family: "Rubic One", sans-serif;
+  background-color: transparent;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  border: none;
+  padding: 16px 24px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-@font-face {
-	font-family: 'Anonymous Pro';
-	src: url(/fonts/anonymouspro-bold.woff);
-	font-weight: bold;
-	font-display: swap;
+.AuthForm_form__reset__t8DRW:hover {
+  color: yellow;
+  background-color: #000;
 }
 
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
+.AuthForm_form__reset__t8DRW:disabled {
+  opacity: .9;
+  pointer-events: none;
 }
 
-html {
-	scroll-behavior: smooth;
+.AuthForm_form__reset__t8DRW:hover + .AuthForm_form__submit__pJzk2 {
+  color: #000;
+  background-color: transparent;
 }
 
-body {
-	margin: 0;
-	font-family: 'Anonymous Pro', serif;
-	font-size: 26px;
-	max-width: 1728px;
-	min-width: 365px;
-	border-right: 4px solid black;
-	border-left: 4px solid black;
-	margin: 0 auto;
+.AuthForm_form__submit__pJzk2 {
+  background-color: #000;
+  color: #fff;
+  font-family: "Rubic One", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  border: none;
+  padding: 16px 24px;
+  transition: color 0.3s ease-in, background-color 0.3s ease-in;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: 'Rubic One', sans-serif;
-	margin: 0;
+.AuthForm_form__submit__pJzk2:hover {
+  color: yellow;
 }
 
-ul,
-ol,
-li,
-p {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+.AuthForm_form__submit__pJzk2:disabled {
+  opacity: .5;
+  pointer-events: none;
 }
 
-a {
-	text-decoration: none;
-	color: inherit;
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/components/Overlay/Overlay.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+.Overlay_overlay__87APJ {
+  position: fixed;
+  top: 0;
+  left: 0;
+  inset: 0;
+  background-color: rgb(0 0 0 / 0.4);
+  display: none;
 }
 
-button {
-	cursor: pointer;
-	font-family: inherit;
-	font-size: inherit;
+.Overlay_overlay_is-opened__QKW4v {
+  display: block;
 }
 
-.button {
-	font-family: 'Rubic One', sans-serif;
-	display: block;
-	padding: 18px 35px;
-	border: 4px solid black;
-	background-color: transparent;
-	text-transform: uppercase;
-	width: -moz-fit-content;
-	width: fit-content;
-	color: black;
-	font-size: 30px;
-	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-	white-space: nowrap;
+/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/components/Popup/Popup.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************/
+.Popup_popup__lJxRt {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  background-color: #fff;
+  padding: 32px 78px;
+  display: none;
+  z-index: 3;
 }
 
-.button:hover {
-	background-color: black;
-	color: #ffff00;
+.Popup_popup_is-opened__R8NFO {
+  display: block;
 }
 
-.main {
-	overflow: hidden;
+.Popup_close__efpry {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 12px;
+  right: 12px;
 }
 
-@media (max-width: 1728px) {
-	body {
-		border: none;
-	}
+.Popup_close-icon__QfKYp {
+  width: 16px;
+  height: 25px;
+  transition: opacity 0.3s ease-in-out;
 }
 
-@media (max-width: 1440px) {
-	body {
-		font-size: 20px;
-	}
+.Popup_close-icon__QfKYp:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
 
-	.button {
-		font-size: 20px;
-	}
+@media (max-width: 650px) {
+  .Popup_popup__lJxRt {
+    width: 90%;
+    padding: 32px 24px;
+  }
 }
 
 /*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
@@ -301,5 +290,171 @@ button {
   .Header_banner__2OWzL {
     padding: 80px 14px;
   }
+}
+
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./app/globals.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+	font-family: 'Anonymous Pro';
+	src: url(/fonts/anonymouspro-regular.woff);
+	font-weight: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Rubic One';
+	src: url(/fonts/rubic-one.woff);
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Anonymous Pro';
+	src: url(/fonts/anonymouspro-bold.woff);
+	font-weight: bold;
+	font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-family: 'Anonymous Pro', serif;
+	font-size: 26px;
+	max-width: 1728px;
+	min-width: 365px;
+	border-right: 4px solid black;
+	border-left: 4px solid black;
+	margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Rubic One', sans-serif;
+	margin: 0;
+}
+
+ul,
+ol,
+li,
+p {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	cursor: pointer;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+.button {
+	font-family: 'Rubic One', sans-serif;
+	display: block;
+	padding: 18px 35px;
+	border: 4px solid black;
+	background-color: transparent;
+	text-transform: uppercase;
+	width: -moz-fit-content;
+	width: fit-content;
+	color: black;
+	font-size: 30px;
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+	white-space: nowrap;
+}
+
+.button:hover {
+	background-color: black;
+	color: #ffff00;
+}
+
+.main {
+	overflow: hidden;
+}
+
+@media (max-width: 1728px) {
+	body {
+		border: none;
+	}
+}
+
+@media (max-width: 1440px) {
+	body {
+		font-size: 20px;
+	}
+
+	.button {
+		font-size: 20px;
+	}
+}
+
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/components/Footer/Footer.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.Footer_footer__YgQC9 {
+	background-color: black;
+	border-top: 4px solid white;
+	border-left: 14px solid white;
+	color: white;
+	padding: 0px 115px 0px 24px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.Footer_footer__logo__Mmgbk {
+	display: block;
+	padding: 20px 0px;
+	width: 100%;
+	align-self: center;
+}
+
+.Footer_footer__logo-name__OLRT5 {
+	font-family: 'Rubic One', sans-serif;
+	text-transform: uppercase;
+	font-size: 26px;
+}
+
+.Footer_footer__YgQC9 .Footer_social-list__link__x1pN7 {
+	text-transform: uppercase;
+	font-weight: bold;
+	aspect-ratio: 1 / 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+	border: 0;
+	border-right: 4px solid white;
+	color: white;
+	height: 100%;
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.Footer_footer__YgQC9 .Footer_social-list__link__x1pN7:hover {
+	background-color: #ffff00;
+	color: black;
+}
+
+.Footer_social-list__fwHMn {
+	display: flex;
+	border-left: 14px solid white;
 }
 
