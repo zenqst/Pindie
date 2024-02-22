@@ -1,5 +1,6 @@
 import { Footer } from '@components/Footer/Footer';
 import './globals.css';
+import { NotFoundImage } from '@components/GameNotFound/not-found'
 import { Header } from '@components/Header/Header';
 
 export const metadata = {

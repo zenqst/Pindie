@@ -1,12 +1,14 @@
 'use client'
 import Styles from './Promo.module.css';
 import { useState, useEffect } from 'react';
+import { useClipboard } from 'use-clipboard-copy';
 
 export const Promo = () => {
 	const [codeIsVisible, setCodeIsVisible] = useState(false)
 	
 	const handleButtonClick = () => {
 	  setCodeIsVisible(true)
+		clipboard.copy('WEBTEENS10')
 	}
 	
 	useEffect(() => {
@@ -22,6 +24,8 @@ export const Promo = () => {
 			clearTimeout(timeout);
 		};
 	}, [codeIsVisible])
+	
+	const clipboard = useClipboard();
 	
 	return (
 		<section className={Styles['promo']}>
