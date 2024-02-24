@@ -280,26 +280,32 @@ export const data = [
 export const categories = [
 	{
 		category: 'new',
-		title: 'Новые'
+		title: 'Новинки',
+		href: 'new'
 	},
 	{
 		category: 'popular',
-		title: 'Популярные'
-	},
-	{
-		category: 'pixel',
-		title: 'Пиксельные'
-	},
-	{
-		category: 'tds',
-		title: 'TDS'
+		title: 'Популярные',
+		href: 'popular'
 	},
 	{
 		category: 'shooter',
-		title: 'Шутеры'
+		title: 'Шутеры',
+		href: 'shooters'
 	},
 	{
 		category: 'runner',
-		title: 'Ранеры'
+		title: 'Ранеры',
+		href: 'runners'
+	},
+	{
+		category: 'pixel',
+		title: 'Пиксельные',
+		href: 'pixel-games'
+	},
+	{
+		category: 'tds',
+		title: 'TDS',
+		href: 'tds'
 	}
 ];

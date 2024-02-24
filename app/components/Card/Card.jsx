@@ -1,9 +1,10 @@
+import Link from 'next/link'
 import Styles from './Card.module.css';
 
-export const Card = ({ title, description, link, image, developer, users }) => {
+export const Card = ({ id, title, description, image, developer, users }) => {
 	return (
 		<li className={Styles['cards-list__item']}>
-			<a href={link} target='_blank' className={Styles['card-list__link']}>
+			<Link href={`games/${id}`} className={Styles['card-list__link']}>
 				<article className={Styles['card']}>
 					<img src={image} alt={`Кадр из игры ${title}`} className={Styles['card__image']} />
 					<div className={Styles['card__content-block']}>
@@ -19,7 +20,7 @@ export const Card = ({ title, description, link, image, developer, users }) => {
 						</div>
 					</div>
 				</article>
-			</a>
+			</Link>
 		</li>
 	);
 };

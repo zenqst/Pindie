@@ -1,14 +1,18 @@
 'use client'
 import Styles from './Promo.module.css';
 import { useState, useEffect } from 'react';
-import { useClipboard } from 'use-clipboard-copy';
 
 export const Promo = () => {
 	const [codeIsVisible, setCodeIsVisible] = useState(false)
 	
 	const handleButtonClick = () => {
 	  setCodeIsVisible(true)
-		clipboard.copy('WEBTEENS10')
+		
+		navigator.clipboard.writeText('WEBTEENS10').then(function() {
+			console.log('Текст успешно скопирован в буфер обмена');
+		}, function(err) {
+			console.error('Произошла ошибка при копировании текста: ', err);
+		});
 	}
 	
 	useEffect(() => {
@@ -24,8 +28,6 @@ export const Promo = () => {
 			clearTimeout(timeout);
 		};
 	}, [codeIsVisible])
-	
-	const clipboard = useClipboard();
 	
 	return (
 		<section className={Styles['promo']}>

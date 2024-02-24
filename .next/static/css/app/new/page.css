@@ -1,0 +1,181 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/components/CardsList/CardsList.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+.CardsList_list-section__WRokJ:not(:first-of-type) {
+	margin-top: 40px;
+}
+
+.CardsList_list-section__title__kCJSX {
+	font-size: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-bottom: 4px solid black;
+	padding: 20px 40px 14px;
+	position: relative;
+}
+
+.CardsList_list-section__title__kCJSX::before {
+	content: '';
+	position: absolute;
+	top: 6px;
+	left: 25px;
+	background-color: #ffff00;
+	width: 60px;
+	height: 45px;
+	z-index: -1;
+}
+
+.CardsList_cards-list__k5P9j {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+	grid-gap: 45px;
+	gap: 45px;
+	padding: 68px 120px;
+}
+
+.CardsList_card-list__link__hTUog {
+	display: flex;
+	height: 100%;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.CardsList_card-list__link__hTUog:hover {
+	background-color: black;
+}
+
+.CardsList_errorText___WkIt {
+	text-align: center;
+	margin: 100px 0px;
+}
+
+@media (max-width: 1440px) {
+	.CardsList_list-section__title__kCJSX {
+		font-size: 26px;
+	}
+
+	.CardsList_list-section__title__kCJSX::before {
+		width: 55px;
+		height: 42px;
+	}
+
+	.CardsList_cards-list__k5P9j {
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		gap: 40px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.CardsList_cards-list__k5P9j {
+		padding: 68px 40px;
+		gap: 30px;
+	}
+}
+
+@media (max-width: 650px) {
+	.CardsList_list-section__title__kCJSX {
+		padding: 20px 14px 14px;
+	}
+
+	.CardsList_list-section__title__kCJSX::before {
+		left: 6px;
+	}
+
+	.CardsList_cards-list__k5P9j {
+		padding: 68px 14px;
+	}
+}
+
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/components/Card/Card.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+.Card_card__CWDle {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.Card_card__CWDle:hover {
+	background-color: #ffff00;
+	transform: translate(-8px, -8px);
+}
+
+.Card_card__image__4mueK {
+	width: 100%;
+	aspect-ratio: 375 / 250;
+	object-fit: cover;
+	object-position: center;
+	border-bottom: 1px solid black;
+}
+
+.Card_card__content-block__wBJdj {
+	padding: 16px 16px 35px;
+	border: 4px solid black;
+	flex-grow: 1;
+	display: grid;
+}
+
+.Card_card__title__GTs84 {
+	font-size: 30px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.Card_card__description__D5I82 {
+	line-height: 1.1;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.Card_card__info-container__4sDHi {
+	align-self: end;
+}
+
+.Card_card__author__u6zAO {
+	font-size: 20px;
+}
+
+.Card_card__author__u6zAO .Card_card__accent__yghaH {
+	font-family: 'Rubic One', sans-serif;
+}
+
+.Card_card__votes__P29Ky {
+	font-size: 20px;
+}
+
+.Card_card__votes__P29Ky .Card_card__accent__yghaH {
+	font-family: 'Rubic One', sans-serif;
+	display: inline-block;
+	padding: 4px 17px 25px 4px;
+	background-color: black;
+	color: white;
+}
+
+@media (max-width: 1440px) {
+	.Card_card__content-block__wBJdj {
+		padding: 16px 16px 26px;
+	}
+
+	.Card_card__title__GTs84 {
+		font-size: 20px;
+	}
+
+	.Card_card__description__D5I82 {
+		font-size: 16px;
+	}
+
+	.Card_card__author__u6zAO {
+		font-size: 16px;
+	}
+
+	.Card_card__votes__P29Ky {
+		font-size: 16px;
+	}
+
+	.Card_card__votes__P29Ky .Card_card__accent__yghaH {
+		padding: 4px 15px 15px 4px;
+	}
+}
+
