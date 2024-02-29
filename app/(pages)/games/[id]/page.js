@@ -15,7 +15,7 @@ export default function GamePage({ params }) {
 	
 	const router = useRouter()
 	
-	const handleClick = () => router.push('/auth-form')
+	const handleClick = () => router.push('/login')
 	
 	return (
 		<main className="main">
