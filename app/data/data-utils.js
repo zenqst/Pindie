@@ -6,5 +6,5 @@ export const getGamesByCategory = (filterBy) => {
 };
 
 export const getGameById = (id) => {
-	return data.find((game) => game.id === Number(id));
+	return data.find((game) => game.id === Number(id)) ?? null;
 }

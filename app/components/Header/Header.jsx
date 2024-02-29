@@ -28,10 +28,10 @@ export const Header = () => {
 	return (
 		<header className={Styles['header']}>
 			{pathName === "/" ? (
-				<img className={`${Styles['logo__image']} ${Styles['logo']}`} src='./images/logo.svg' alt='Логотип Pindie' />
+				<img className={`${Styles['logo__image']} ${Styles['logo']}`} src='/images/logo.svg' alt='Логотип Pindie' />
 			) : (
 				<Link href='/' className={Styles['logo']}>
-					<img className={Styles['logo__image']} src='./images/logo.svg' alt='Логотип Pindie' />
+					<img className={Styles['logo__image']} src='/images/logo.svg' alt='Логотип Pindie' />
 				</Link>
 			)}
 					<nav className={Styles['menu']}>

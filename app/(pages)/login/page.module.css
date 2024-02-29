@@ -1,0 +1,7 @@
+.mainInner{
+	margin: 0px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 75vh;
+}
