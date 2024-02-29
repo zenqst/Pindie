@@ -1,8 +1,8 @@
-.list-section:not(:first-of-type) {
+.listSection:not(:first-of-type) {
 	margin-top: 40px;
 }
 
-.list-section__title {
+.listSectionTitle {
 	font-size: 40px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -11,7 +11,7 @@
 	position: relative;
 }
 
-.list-section__title::before {
+.listSectionTitle::before {
 	content: '';
 	position: absolute;
 	top: 6px;
@@ -22,20 +22,20 @@
 	z-index: -1;
 }
 
-.cards-list {
+.cardsList {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
 	gap: 45px;
 	padding: 68px 120px;
 }
 
-.card-list__link {
+.cardListLink {
 	display: flex;
 	height: 100%;
 	transition: background-color 0.3s ease-in-out;
 }
 
-.card-list__link:hover {
+.cardListLink:hover {
 	background-color: black;
 }
 
@@ -45,38 +45,38 @@
 }
 
 @media (width <= 1440px) {
-	.list-section__title {
+	.listSectionTitle {
 		font-size: 26px;
 	}
 
-	.list-section__title::before {
+	.listSectionTitle::before {
 		width: 55px;
 		height: 42px;
 	}
 
-	.cards-list {
+	.cardsList {
 		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 		gap: 40px;
 	}
 }
 
 @media (width <= 1024px) {
-	.cards-list {
+	.cardsList {
 		padding: 68px 40px;
 		gap: 30px;
 	}
 }
 
 @media (width <= 650px) {
-	.list-section__title {
+	.listSectioTitle {
 		padding: 20px 14px 14px;
 	}
 
-	.list-section__title::before {
+	.listSectionTitle::before {
 		left: 6px;
 	}
 
-	.cards-list {
+	.cardsList {
 		padding: 68px 14px;
 	}
 }

@@ -7,18 +7,18 @@ export const CardsList = ({ category, title }) => {
 	const categoryData = getGamesByCategory(category);
 
 	return (
-		<section className={Styles['list-section']}>
-			<h2 className={Styles['list-section__title']} id={category}>
+		<section className={Styles.listSection}>
+			<h2 className={Styles.listSectionTitle} id={category}>
 				{title}
 			</h2>
 			{categoryData ? (
-				<ul className={Styles['cards-list']}>
+				<ul className={Styles.cardsList}>
 					{categoryData.map((item, index) => (
 						<Card {...item} key={index} />
 					))}
 				</ul>
 			) : (
-				<p className={Styles['errorText']}>Произошла какая-то ошибка! Мы уже пытаемся её исправить</p>
+				<p className={Styles.errorText}>Произошла какая-то ошибка! Мы уже пытаемся её исправить</p>
 			)}
 		</section>
 	);

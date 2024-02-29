@@ -14,15 +14,15 @@ import { categories } from '@data/data';
 import { useState } from 'react';
 
 export const Header = () => {
-	const [popupIsOpened, setPopupIsOpened] = useState(false);
+	const [authPopupIsOpened, setAuthPopupIsOpened] = useState(false);
 	const pathName = usePathname();
 
-	const openPopup = () => {
-		setPopupIsOpened(true);
+	const openAuthPopup = () => {
+		setAuthPopupIsOpened(true);
 	};
 
-	const closePopup = () => {
-		setPopupIsOpened(false);
+	const closeAuthPopup = () => {
+		setAuthPopupIsOpened(false);
 	};
 	
 	return (
@@ -41,13 +41,13 @@ export const Header = () => {
 					))}
 				</ul>
 				<div className={Styles['auth']}>
-					<button onClick={openPopup} className={Styles['auth__button']}>
+					<button onClick={openAuthPopup} className={Styles['auth__button']}>
 						Войти
 					</button>
 				</div>
 			</nav>
-			<Overlay isOpened={popupIsOpened} closePopup={closePopup} />
-			<Popup isOpened={popupIsOpened} closePopup={closePopup}>
+			<Overlay isOpened={authPopupIsOpened} closePopup={closeAuthPopup} />
+			<Popup isOpened={authPopupIsOpened} closePopup={closeAuthPopup}>
 				<AuthForm />
 			</Popup>
 		</header>

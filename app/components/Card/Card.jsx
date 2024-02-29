@@ -3,19 +3,19 @@ import Styles from './Card.module.css';
 
 export const Card = ({ id, title, description, image, developer, users }) => {
 	return (
-		<li className={Styles['cards-list__item']}>
-			<Link href={`games/${id}`} className={Styles['card-list__link']}>
-				<article className={Styles['card']}>
-					<img src={image} alt={`Кадр из игры ${title}`} className={Styles['card__image']} />
-					<div className={Styles['card__content-block']}>
-						<h3 className={Styles['card__title']}>{title}</h3>
-						<p className={Styles['card__description']}>{description}</p>
-						<div className={Styles['card__info-container']}>
-							<p className={Styles['card__author']}>
-								Автор: <span className={Styles['card__accent']}>{developer}</span>
+		<li className={Styles.cardsListItem}>
+			<Link href={`games/${id}`} className={Styles.cardListLink}>
+				<article className={Styles.card}>
+					<img src={image} alt={`Кадр из игры ${title}`} className={Styles.cardImage} />
+					<div className={Styles.cardContentBlock}>
+						<h3 className={Styles.cardTitle}>{title}</h3>
+						<p className={Styles.cardDescription}>{description}</p>
+						<div className={Styles.cardInfoContainer}>
+							<p className={Styles.cardAuthor}>
+								Автор: <span className={Styles.cardAccent}>{developer}</span>
 							</p>
-							<p className={Styles['card__votes']}>
-								Голосов на сайте: <span className={Styles['card__accent']}>{users.length}</span>
+							<p className={Styles.cardVotes}>
+								Голосов на сайте: <span className={Styles.cardAccent}>{users.length}</span>
 							</p>
 						</div>
 					</div>

@@ -2,21 +2,21 @@ import Styles from './AuthForm.module.css';
 
 export const AuthForm = () => {
   return (
-    <form className={Styles['form']}>
-      <h2 className={Styles['form__title']}>Авторизация</h2>
-      <div className={Styles['form__fields']}>
-        <label className={Styles['form__field']}>
-          <span className={Styles['form__field-title']}>Email</span>
-          <input className={Styles['form__field-input']} type="email" placeholder="hello@world.com"/>
+    <form className={Styles.form}>
+      <h2 className={Styles.formTitle}>Авторизация</h2>
+      <div className={Styles.formFields}>
+        <label className={Styles.formField}>
+          <span className={Styles.formFieldTitle}>Email</span>
+          <input className={Styles.formFieldInput} type="email" placeholder="hello@world.com"/>
         </label>
-        <label className={Styles['form__field']}>
-          <span className={Styles['form__field-title']}>Пароль</span>
-          <input className={Styles['form__field-input']} type="password" placeholder='***********'/>
+        <label className={Styles.formField}>
+          <span className={Styles.formFieldTitle}>Пароль</span>
+          <input className={Styles.formFieldInput} type="password" placeholder='***********'/>
         </label>
       </div>
-      <div className={Styles['form__actions']}>
-        <button className={Styles['form__reset']} type="reset">Очистить</button>
-        <button className={Styles['form__submit']} type="submit">Войти</button>
+      <div className={Styles.formActions}>
+        <button className={Styles.formReset} type="reset">Очистить</button>
+        <button className={Styles.formSubmit} type="submit">Войти</button>
       </div>
     </form>
   ) 

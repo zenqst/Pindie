@@ -19,33 +19,33 @@ export default function GamePage({ params }) {
 	
 	return (
 		<main className="main">
-				<section className={Styles["game"]}>
+				<section className={Styles.game}>
 					{/* Вынести в отдельный компонент */}
 				<iframe
-					className={Styles["game__iframe"]}
+					className={Styles.gameIframe}
 					src={link}
 				></iframe>
 			</section>
-				<section className={Styles["about"]}>
-				<h2 className={Styles["about__title"]}>{title}</h2>
-				<div className={Styles["about__content"]}>
-					<p className={Styles["about__description"]}>
+				<section className={Styles.about}>
+				<h2 className={Styles.aboutTitle}>{title}</h2>
+				<div className={Styles.aboutContent}>
+					<p className={Styles.aboutDescription}>
 						{description}
 					</p>
-					<div className={Styles["about__author"]}>
+					<div className={Styles.aboutAuthor}>
 						<p>
 							Автор:
-							<span className={Styles["about__accent"]}>{developer}</span>
+							<span className={Styles.aboutAccent}>{developer}</span>
 						</p>
 					</div>
 				</div>
-				<div className={Styles["about__vote"]}>
-					<p className={Styles["about__vote-amount"]}>
+				<div className={Styles.aboutVote}>
+					<p className={Styles.aboutVoteAmount}>
 						За игру уже проголосовали:
-						<span className={Styles["about__accent"]}>{users.length}</span>
+						<span className={Styles.aboutAccent}>{users.length}</span>
 					</p>
 					{/* Вынести в отдельный компонент */}
-					<button onClick={handleClick} className={`button ${Styles["about__vote-button"]}`}>
+					<button onClick={handleClick} className={`button ${Styles.aboutVoteButton}`}>
 						Голосовать
 					</button>
 				</div>

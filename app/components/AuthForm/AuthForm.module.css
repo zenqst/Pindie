@@ -5,29 +5,29 @@
   width: 100%;
 }
 
-.form__title {
+.formTitle {
   margin-bottom: 24px;
   font-size: 36px;
 }
 
-.form__fields {
+.formFields {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.form__field {
+.formField {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
 
-.form__field-title {
+.formFieldTitle {
   margin-bottom: 8px;
   font-size: 22px;
 }
 
-.form__field-input {
+.formFieldInput {
   width: 100%;
   border: 1px solid #000000;
   border-radius: 4px;
@@ -36,14 +36,14 @@
   font-size: 22px;
 }
 
-.form__actions {
+.formActions {
   display: flex;
   justify-content: center;
   width: 100%;
   gap: 8px;
 }
 
-.form__reset {
+.formReset {
   font-family: "Rubic One", sans-serif;
   background-color: transparent;
   font-size: 20px;
@@ -54,22 +54,22 @@
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-.form__reset:hover {
+.formReset:hover {
   color: yellow;
   background-color: #000;
 }
 
-.form__reset:disabled {
+.formReset:disabled {
   opacity: .9;
   pointer-events: none;
 }
 
-.form__reset:hover + .form__submit {
+.formReset:hover + .formSubmit {
   color: #000;
   background-color: transparent;
 }
 
-.form__submit {
+.formSubmit {
   background-color: #000;
   color: #fff;
   font-family: "Rubic One", sans-serif;
@@ -81,11 +81,11 @@
   transition: color 0.3s ease-in, background-color 0.3s ease-in;
 }
 
-.form__submit:hover {
+.formSubmit:hover {
   color: yellow;
 }
 
-.form__submit:disabled {
+.formSubmit:disabled {
   opacity: .5;
   pointer-events: none;
 }

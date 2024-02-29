@@ -5,13 +5,13 @@
 	gap: 20px;
 }
 
-.banner__title {
+.bannerTitle {
 	font-size: 42px;
 	margin-bottom: 20px;
 	max-width: 708px;
 }
 
-.banner__text-block {
+.bannerTextBlock {
 	line-height: 1.6;
 	margin-bottom: 40px;
 	padding-left: 80px;
@@ -19,12 +19,12 @@
 	letter-spacing: 1.5;
 }
 
-.banner__link {
+.bannerLink {
 	display: block;
 	margin-left: 80px;
 }
 
-.banner__image {
+.bannerImage {
 	width: 100%;
 	max-width: 228px;
 	box-shadow: 8px 8px 0 black;
@@ -34,7 +34,7 @@
 }
 
 @media (width <= 1440px) {
-	.banner__title {
+	.bannerTitle {
 		font-size: 30px;
 	}
 }
@@ -45,25 +45,25 @@
 		padding: 80px 40px;
 	}
 
-	.banner__title {
+	.bannerTitle {
 		width: 70%;
 		max-width: 100%;
 	}
 
-	.banner__text-block {
+	.bannerTextBlock {
 		max-width: 100%;
 	}
 
-	.banner__image {
+	.bannerImage {
 		display: none;
 	}
 }
 
 @media (width <= 768px) {
-	.banner__text-block {
+	.bannerTextBlock {
 		padding-left: 0;
 	}
-	.banner__link {
+	.bannerLink {
 		margin-left: 0;
 	}
 }

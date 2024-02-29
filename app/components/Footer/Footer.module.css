@@ -8,20 +8,20 @@
 	justify-content: space-between;
 }
 
-.footer__logo {
+.footerLogo {
 	display: block;
 	padding: 20px 0px;
 	width: 100%;
 	align-self: center;
 }
 
-.footer__logo-name {
+.footerLogoName {
 	font-family: 'Rubic One', sans-serif;
 	text-transform: uppercase;
 	font-size: 26px;
 }
 
-.footer .social-list__link {
+.footer .socialListLink {
 	text-transform: uppercase;
 	font-weight: bold;
 	aspect-ratio: 1 / 1;
@@ -37,12 +37,12 @@
 	border-bottom: 0;
 }
 
-.footer .social-list__link:hover {
+.footer .socialListLink:hover {
 	background-color: #ffff00;
 	color: black;
 }
 
-.social-list {
+.socialList {
 	display: flex;
 	border-left: 14px solid white;
 }

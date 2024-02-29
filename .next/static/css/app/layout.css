@@ -11,20 +11,20 @@
 	justify-content: space-between;
 }
 
-.Footer_footer__logo__Mmgbk {
+.Footer_footerLogo__7Bgq_ {
 	display: block;
 	padding: 20px 0px;
 	width: 100%;
 	align-self: center;
 }
 
-.Footer_footer__logo-name__OLRT5 {
+.Footer_footerLogoName__bApgy {
 	font-family: 'Rubic One', sans-serif;
 	text-transform: uppercase;
 	font-size: 26px;
 }
 
-.Footer_footer__YgQC9 .Footer_social-list__link__x1pN7 {
+.Footer_footer__YgQC9 .Footer_socialListLink__3Y9BX {
 	text-transform: uppercase;
 	font-weight: bold;
 	aspect-ratio: 1 / 1;
@@ -40,12 +40,12 @@
 	border-bottom: 0;
 }
 
-.Footer_footer__YgQC9 .Footer_social-list__link__x1pN7:hover {
+.Footer_footer__YgQC9 .Footer_socialListLink__3Y9BX:hover {
 	background-color: #ffff00;
 	color: black;
 }
 
-.Footer_social-list__fwHMn {
+.Footer_socialList__8SUuW {
 	display: flex;
 	border-left: 14px solid white;
 }
@@ -60,29 +60,29 @@
   width: 100%;
 }
 
-.AuthForm_form__title__bh8UF {
+.AuthForm_formTitle__3Ntph {
   margin-bottom: 24px;
   font-size: 36px;
 }
 
-.AuthForm_form__fields__9NEi0 {
+.AuthForm_formFields__8wMGn {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.AuthForm_form__field__8_VIY {
+.AuthForm_formField__NQyEp {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
 
-.AuthForm_form__field-title__KiNGx {
+.AuthForm_formFieldTitle__logTq {
   margin-bottom: 8px;
   font-size: 22px;
 }
 
-.AuthForm_form__field-input__rnkmC {
+.AuthForm_formFieldInput__bcOWT {
   width: 100%;
   border: 1px solid #000000;
   border-radius: 4px;
@@ -91,14 +91,14 @@
   font-size: 22px;
 }
 
-.AuthForm_form__actions__QgxEI {
+.AuthForm_formActions__lq1Jr {
   display: flex;
   justify-content: center;
   width: 100%;
   gap: 8px;
 }
 
-.AuthForm_form__reset__t8DRW {
+.AuthForm_formReset__8ti_T {
   font-family: "Rubic One", sans-serif;
   background-color: transparent;
   font-size: 20px;
@@ -109,22 +109,22 @@
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-.AuthForm_form__reset__t8DRW:hover {
+.AuthForm_formReset__8ti_T:hover {
   color: yellow;
   background-color: #000;
 }
 
-.AuthForm_form__reset__t8DRW:disabled {
+.AuthForm_formReset__8ti_T:disabled {
   opacity: .9;
   pointer-events: none;
 }
 
-.AuthForm_form__reset__t8DRW:hover + .AuthForm_form__submit__pJzk2 {
+.AuthForm_formReset__8ti_T:hover + .AuthForm_formSubmit__HWrak {
   color: #000;
   background-color: transparent;
 }
 
-.AuthForm_form__submit__pJzk2 {
+.AuthForm_formSubmit__HWrak {
   background-color: #000;
   color: #fff;
   font-family: "Rubic One", sans-serif;
@@ -136,11 +136,11 @@
   transition: color 0.3s ease-in, background-color 0.3s ease-in;
 }
 
-.AuthForm_form__submit__pJzk2:hover {
+.AuthForm_formSubmit__HWrak:hover {
   color: yellow;
 }
 
-.AuthForm_form__submit__pJzk2:disabled {
+.AuthForm_formSubmit__HWrak:disabled {
   opacity: .5;
   pointer-events: none;
 }
@@ -191,7 +191,7 @@
 .Popup_close-icon__QfKYp {
   width: 16px;
   height: 25px;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .Popup_close-icon__QfKYp:hover {
