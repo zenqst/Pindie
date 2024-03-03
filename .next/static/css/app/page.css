@@ -78,93 +78,6 @@
 	}
 }
 
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/components/CardsList/CardsList.module.css ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************/
-.CardsList_listSection__5k6Ux:not(:first-of-type) {
-	margin-top: 40px;
-}
-
-.CardsList_listSectionTitle__SDiiR {
-	font-size: 40px;
-	font-weight: bold;
-	text-transform: uppercase;
-	border-bottom: 4px solid black;
-	padding: 20px 40px 14px;
-	position: relative;
-}
-
-.CardsList_listSectionTitle__SDiiR::before {
-	content: '';
-	position: absolute;
-	top: 6px;
-	left: 25px;
-	background-color: #ffff00;
-	width: 60px;
-	height: 45px;
-	z-index: -1;
-}
-
-.CardsList_cardsList__LO1GB {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
-	grid-gap: 45px;
-	gap: 45px;
-	padding: 68px 120px;
-}
-
-.CardsList_cardListLink__ycaw7 {
-	display: flex;
-	height: 100%;
-	transition: background-color 0.3s ease-in-out;
-}
-
-.CardsList_cardListLink__ycaw7:hover {
-	background-color: black;
-}
-
-.CardsList_errorText___WkIt {
-	text-align: center;
-	margin: 100px 0px;
-}
-
-@media (max-width: 1440px) {
-	.CardsList_listSectionTitle__SDiiR {
-		font-size: 26px;
-	}
-
-	.CardsList_listSectionTitle__SDiiR::before {
-		width: 55px;
-		height: 42px;
-	}
-
-	.CardsList_cardsList__LO1GB {
-		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-		gap: 40px;
-	}
-}
-
-@media (max-width: 1024px) {
-	.CardsList_cardsList__LO1GB {
-		padding: 68px 40px;
-		gap: 30px;
-	}
-}
-
-@media (max-width: 650px) {
-	.CardsList_listSectioTitle__tUr_o {
-		padding: 20px 14px 14px;
-	}
-
-	.CardsList_listSectionTitle__SDiiR::before {
-		left: 6px;
-	}
-
-	.CardsList_cardsList__LO1GB {
-		padding: 68px 14px;
-	}
-}
-
 /*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/components/Card/Card.module.css ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************/
@@ -256,6 +169,93 @@
 
 	.Card_cardVotes___5xvI .Card_cardAccent__PfXpW {
 		padding: 4px 15px 15px 4px;
+	}
+}
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/components/CardsList/CardsList.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+.CardsList_listSection__5k6Ux:not(:first-of-type) {
+	margin-top: 40px;
+}
+
+.CardsList_listSectionTitle__SDiiR {
+	font-size: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-bottom: 4px solid black;
+	padding: 20px 40px 14px;
+	position: relative;
+}
+
+.CardsList_listSectionTitle__SDiiR::before {
+	content: '';
+	position: absolute;
+	top: 6px;
+	left: 25px;
+	background-color: #ffff00;
+	width: 60px;
+	height: 45px;
+	z-index: -1;
+}
+
+.CardsList_cardsList__LO1GB {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+	grid-gap: 45px;
+	gap: 45px;
+	padding: 68px 120px;
+}
+
+.CardsList_cardListLink__ycaw7 {
+	display: flex;
+	height: 100%;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.CardsList_cardListLink__ycaw7:hover {
+	background-color: black;
+}
+
+.CardsList_errorText___WkIt {
+	text-align: center;
+	margin: 100px 0px;
+}
+
+@media (max-width: 1440px) {
+	.CardsList_listSectionTitle__SDiiR {
+		font-size: 26px;
+	}
+
+	.CardsList_listSectionTitle__SDiiR::before {
+		width: 55px;
+		height: 42px;
+	}
+
+	.CardsList_cardsList__LO1GB {
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		gap: 40px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.CardsList_cardsList__LO1GB {
+		padding: 68px 40px;
+		gap: 30px;
+	}
+}
+
+@media (max-width: 650px) {
+	.CardsList_listSectioTitle__tUr_o {
+		padding: 20px 14px 14px;
+	}
+
+	.CardsList_listSectionTitle__SDiiR::before {
+		left: 6px;
+	}
+
+	.CardsList_cardsList__LO1GB {
+		padding: 68px 14px;
 	}
 }
 

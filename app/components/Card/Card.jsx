@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Styles from './Card.module.css';
 
-export const Card = ({ id, title, description, image, developer, users }) => {
+export const Card = ({ id, title, description, image, developer, users_permissions_users }) => {
 	return (
 		<li className={Styles.cardsListItem}>
 			<Link href={`games/${id}`} className={Styles.cardListLink}>
@@ -15,7 +15,7 @@ export const Card = ({ id, title, description, image, developer, users }) => {
 								Автор: <span className={Styles.cardAccent}>{developer}</span>
 							</p>
 							<p className={Styles.cardVotes}>
-								Голосов на сайте: <span className={Styles.cardAccent}>{users.length}</span>
+								Голосов на сайте: <span className={Styles.cardAccent}>{users_permissions_users.length}</span>
 							</p>
 						</div>
 					</div>
