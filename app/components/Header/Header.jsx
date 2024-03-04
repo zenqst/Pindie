@@ -1,8 +1,9 @@
-'use client';
+"use client"
 import { useEffect, useState } from 'react'
 
-import { getJWT, getMe, isResponseOk, removeJWT, requestUser } from '@api/api-utils'
+import { isResponseOk, requestUser } from '@api/api-utils'
 import { endpoints } from '@api/config'
+import { getJWT, removeJWT } from '@api/cookies-utils'
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -65,7 +66,7 @@ export const Header = () => {
 					))}
 				</ul>
 				<div className={Styles['auth']}>
-					{jwt ? (
+					{isAuthorized ? (
 					<button onClick={handleClick} className={Styles['auth__button']}>
 						Выйти
 					</button>) : (

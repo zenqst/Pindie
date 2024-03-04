@@ -1,8 +1,9 @@
 'use client'
 import { useEffect, useState } from 'react'
 
-import { authorize, getMe, isResponseOk, requestUser, setJWT } from '@api/api-utils'
+import { authorize, isResponseOk, requestUser } from '@api/api-utils'
 import { endpoints } from '@api/config'
+import { setJWT } from '@api/cookies-utils'
 
 import Styles from './AuthForm.module.css';
 

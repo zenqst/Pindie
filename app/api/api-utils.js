@@ -77,18 +77,6 @@ export const vote = async (url, jwt, usersArray) => {
 	}
 }
 
-export const setJWT = (jwt) => {
-	localStorage.setItem("jwt", jwt);
-};
-
-export const getJWT = () => {
-	return localStorage.getItem("jwt");
-};
-
-export const removeJWT = () => {
-	localStorage.removeItem("jwt");
-};
-
 export const isResponseOk = (response) => {
 	return response.user ?? response.username;
 }

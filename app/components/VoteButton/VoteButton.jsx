@@ -3,8 +3,9 @@ import { useEffect, useState } from 'react'
 
 import { useRouter } from 'next/navigation'
 
-import { checkIfUserVoted, getJWT, isResponseOk, removeJWT, requestUser, vote } from '@api/api-utils'
+import { checkIfUserVoted, isResponseOk, requestUser, vote } from '@api/api-utils'
 import { endpoints } from '@api/config'
+import { getJWT, removeJWT } from '@api/cookies-utils'
 
 import Styles from './VoteButton.module.css'
 
