@@ -5,9 +5,9 @@ export function getJWT() {
 }
 
 export function setJWT(jwt) {
-	document.cookie = `jwt=${jwt}; Secure`;
+	document.cookie = `jwt=${jwt}; Secure; path=/; domain=pindie-js.vercel.app;`;
 }
 
 export function removeJWT() {
-	document.cookie = 'jwt=; Max-Age=-0';
+	document.cookie = 'jwt=; Max-Age=0; Secure; path=/; domain=pindie-js.vercel.app;';
 }
