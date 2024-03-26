@@ -1,18 +1,25 @@
-import { useContext, useEffect, useState } from 'react';
+'use client'
+import { useEffect, useState } from 'react';
+import { useStore } from "@store/app-store";
+
 import { checkIfUserVoted, isResponseOk, vote } from '@api/api-utils';
 import { endpoints } from '@api/config';
+
 import { AuthContext } from '@context/app-context';
+
 import Styles from './VoteButton.module.css';
 
-export const VoteButton = ({ game, setGame, router }) => {
+export const VoteButton = ({ game, setGame }) => {
     const [isVoted, setIsVoted] = useState(false);
-    const { token, user, isAuth } = useContext(AuthContext);
+    const { token, user, isAuth } = useStore();
 
     const handleVote = async () => {
         const jwt = token;
         let usersIdArray = game.users.length ? game.users.map((user) => user.id) : [];
         usersIdArray.push(user.id);
+
         const response = await vote(`${endpoints.games}/${game.id}`, jwt, usersIdArray);
+
         if (isResponseOk(response)) {
             setGame((prevGame) => ({
                 ...prevGame,
@@ -23,9 +30,7 @@ export const VoteButton = ({ game, setGame, router }) => {
     };
 
     useEffect(() => {
-        if (user && user.id && game) {
-            setIsVoted(checkIfUserVoted(game, user.id));
-        }
+        user && game ? setIsVoted(checkIfUserVoted(game, user.id)) : setIsVoted(false);
     }, [game, user]);
 
     return (

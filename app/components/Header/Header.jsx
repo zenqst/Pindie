@@ -1,5 +1,6 @@
 "use client"
-import { useContext, useState } from 'react';
+import { useState } from 'react';
+import { useStore } from "@store/app-store";
 
 import { AuthContext } from "@context/app-context";
 
@@ -17,9 +18,7 @@ import { Popup } from '@components/Popup/Popup';
 
 export const Header = () => {
 	const [authPopupIsOpened, setAuthPopupIsOpened] = useState(false);
-
-	const { isAuth, logout } = useContext(AuthContext);
-
+	const { isAuth, logout } = useStore();
 	const pathName = usePathname();
 
 	const openAuthPopup = () => {

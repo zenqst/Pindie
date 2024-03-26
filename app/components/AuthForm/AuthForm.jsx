@@ -1,9 +1,9 @@
 'use client'
-import { useEffect, useState, useContext } from 'react'
+import { useEffect, useState } from 'react'
+import { useStore } from "@store/app-store";
 
 import { authorize, isResponseOk, requestUser } from '@api/api-utils'
 import { endpoints } from '@api/config'
-import { AuthContext } from "@context/app-context";
 
 import Styles from './AuthForm.module.css';
 
@@ -11,7 +11,7 @@ export const AuthForm = ({ closePopup }) => {
   const [authData, setAuthData] = useState({ identifier: "", password: "" })
   const [message, setMessage] = useState({ status: null, text: null })
 
-  const { user, login } = useContext(AuthContext);
+  const { user, login } = useStore();
   
   useEffect(() => {
     let timer;

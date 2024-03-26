@@ -47,8 +47,7 @@ export default function GamePage({ params }) {
 				</div>
 				<div className={Styles.aboutVote}>
 					<p className={Styles.aboutVoteAmount}>
-						За игру уже проголосовали:
-						<span className={Styles.aboutAccent}>{gameData.users.length}</span>
+						За игру уже проголосовали: <span className={Styles.aboutAccent}>{gameData.users.length}</span>
 					</p>
 					<VoteButton game={gameData} setGame={setGameData}/>
 				</div>
