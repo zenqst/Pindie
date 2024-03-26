@@ -78,7 +78,7 @@ export const vote = async (url, jwt, usersArray) => {
 }
 
 export const isResponseOk = (response) => {
-	return response.user ?? response.username;
+	return response.user || response.username || response.id;
 }
 
 export const checkIfUserVoted = (game, userId) => {

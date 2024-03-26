@@ -5,8 +5,6 @@ import { useStore } from "@store/app-store";
 import { checkIfUserVoted, isResponseOk, vote } from '@api/api-utils';
 import { endpoints } from '@api/config';
 
-import { AuthContext } from '@context/app-context';
-
 import Styles from './VoteButton.module.css';
 
 export const VoteButton = ({ game, setGame }) => {
