@@ -1,7 +1,6 @@
 'use client'
-import { useEffect, useState } from 'react'
+import { useGetDataByCategory } from "@api/hooks";
 
-import { getGamesByCategory } from '@api/api-utils'
 import { endpoints } from '@api/config'
 
 import { Preloader } from '@components/Preloader/Preloader'
@@ -10,15 +9,9 @@ import { Card } from '@components/Card/Card';
 import Styles from './CardsList.module.css';
 
 export const CardsList = ({ category, title }) => {
+	const { data, pending } = useGetDataByCategory(endpoints.category, category)
 	
-	const [data, setData] = useState(null)
-	
-	useEffect(() => {
-		const categoryData = async () => setData(await getGamesByCategory(endpoints.category+category))
-		categoryData()
-	}, [])
-	
-	if (!data){
+	if (pending){
 		return <Preloader/>
 	}
 	

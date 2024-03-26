@@ -1,13 +1,13 @@
-import Cookies from 'js-cookie';
+export function getJWT() {
+	const value = `; ${document.cookie}`;
+	const parts = value.split(`; jwt=`);
+	return parts.pop()?.split(';').shift();
+}
 
-export const setJWT = (jwt) => {
-	Cookies.set('jwt', jwt, { secure: true});
-};
+export function setJWT(jwt) {
+	document.cookie = `jwt=${jwt}; Secure`;
+}
 
-export const getJWT = () => {
-	return Cookies.get('jwt');
-};
-
-export const removeJWT = () => {
-	Cookies.remove('jwt');
-};
+export function removeJWT() {
+	document.cookie = 'jwt=; Max-Age=-0';
+}

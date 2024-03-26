@@ -1,12 +1,10 @@
 "use client"
-import { useEffect, useState } from 'react'
+import { useContext, useState } from 'react';
 
-import { isResponseOk, requestUser } from '@api/api-utils'
-import { endpoints } from '@api/config'
-import { getJWT, removeJWT } from '@api/cookies-utils'
+import { AuthContext } from "@context/app-context";
 
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 import Styles from './Header.module.css';
 import { HeaderLink } from './HeaderLink';
@@ -19,23 +17,10 @@ import { Popup } from '@components/Popup/Popup';
 
 export const Header = () => {
 	const [authPopupIsOpened, setAuthPopupIsOpened] = useState(false);
-	const [isAuthorized, setIsAuthorized] = useState(false)
-	
+
+	const { isAuth, logout } = useContext(AuthContext);
+
 	const pathName = usePathname();
-	const jwt = getJWT()
-	
-	useEffect( () => {
-		if (jwt) {
-			requestUser(endpoints.me, jwt).then((userData) => {
-				if (isResponseOk(userData)){
-					setIsAuthorized(true)
-				} else {
-					setIsAuthorized(false)
-					removeJWT()
-				}
-			})
-		}
-	}, [])
 
 	const openAuthPopup = () => {
 		setAuthPopupIsOpened(true);
@@ -45,9 +30,8 @@ export const Header = () => {
 		setAuthPopupIsOpened(false);
 	};
 	
-	const handleClick = () => {
-		setIsAuthorized(false)
-		removeJWT()
+	const handleLogout = () => {
+		logout()
 	}
 	
 	return (
@@ -66,10 +50,10 @@ export const Header = () => {
 					))}
 				</ul>
 				<div className={Styles['auth']}>
-					{isAuthorized ? (
-					<button onClick={handleClick} className={Styles['auth__button']}>
-						Выйти
-					</button>) : (
+					{isAuth ? (
+						<button onClick={handleLogout} className={Styles['auth__button']}>
+							Выйти
+						</button>) : (
 						<button onClick={openAuthPopup} className={Styles['auth__button']}>
 							Войти
 						</button>
@@ -78,7 +62,7 @@ export const Header = () => {
 					</nav>
 			<Overlay isOpened={authPopupIsOpened} closePopup={closeAuthPopup} />
 			<Popup isOpened={authPopupIsOpened} closePopup={closeAuthPopup}>
-				<AuthForm closePopup={closeAuthPopup} setAuth={setIsAuthorized}/>
+				<AuthForm closePopup={closeAuthPopup}/>
 			</Popup>
 		</header>
 	);

@@ -21,7 +21,7 @@ export default function GamePage({ params }) {
 	if (gameData === null){
 		return <Preloader/>
 	} else if (gameData === undefined) {
-		return  <NotFound text={'Я лох'}/>
+		return  <NotFound text={'Страница не найдена...'}/>
 	}
 	
 	return (
@@ -41,8 +41,7 @@ export default function GamePage({ params }) {
 					</p>
 					<div className={Styles.aboutAuthor}>
 						<p>
-							Автор:
-							<span className={Styles.aboutAccent}>{gameData.developer}</span>
+							Автор: <span className={Styles.aboutAccent}>{gameData.developer}</span>
 						</p>
 					</div>
 				</div>

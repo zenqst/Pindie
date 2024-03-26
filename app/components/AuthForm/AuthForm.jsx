@@ -1,26 +1,27 @@
 'use client'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useContext } from 'react'
 
 import { authorize, isResponseOk, requestUser } from '@api/api-utils'
 import { endpoints } from '@api/config'
-import { setJWT } from '@api/cookies-utils'
+import { AuthContext } from "@context/app-context";
 
 import Styles from './AuthForm.module.css';
 
-export const AuthForm = ({ closePopup, setAuth }) => {
+export const AuthForm = ({ closePopup }) => {
   const [authData, setAuthData] = useState({ identifier: "", password: "" })
-  const [userData, setUserData] = useState(null)
   const [message, setMessage] = useState({ status: null, text: null })
+
+  const { user, login } = useContext(AuthContext);
   
   useEffect(() => {
     let timer;
-    if (userData) {
+    if (user) {
       timer = setTimeout(() => {
         closePopup();
       }, 2000);
     }
     return () => clearTimeout(timer);
-  }, [userData]);
+  }, [user]);
   
   const handleInput = (e) => {
     setAuthData({ ...authData, [e.target.name]: e.target.value });
@@ -31,10 +32,8 @@ export const AuthForm = ({ closePopup, setAuth }) => {
     const userData = await authorize(endpoints.auth, authData);
     
     if (isResponseOk(userData)) {
-      await requestUser(endpoints.me, userData.jwt)
-      setJWT(userData.jwt)
-      setUserData(userData);
-      setAuth(true);
+      login(userData.user, userData.jwt)
+
       setMessage({ status: "success", text: "Вы авторизовались!" });
     } else {
       setMessage({ status: "error", text: "Неверные почта или пароль" });
