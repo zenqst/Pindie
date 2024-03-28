@@ -6,11 +6,10 @@
     justify-content: center;
     align-items: center;
     min-height: 75vh;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
-    grid-gap: 45px;
-    gap: 45px;
-    padding: 68px 120px;
+}
+
+.page_logoutLink__FMvGF {
+    display: block;
 }
 
 .page_profileTitle__Q3X2n:not(:first-of-type) {
@@ -41,4 +40,15 @@
     line-height: 1.1;
     margin-bottom: 20px;
     font-size: 25px;
+}
+
+.page_additionalActions__p5poL {
+    margin-top: 100px;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .page_logoutLink__FMvGF {
+        margin-left: 0;
+    }
 }

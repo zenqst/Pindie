@@ -2,5 +2,6 @@
   "/page": "app/page.js",
   "/(pages)/games/[id]/page": "app/(pages)/games/[id]/page.js",
   "/(pages)/register/page": "app/(pages)/register/page.js",
-  "/(pages)/profile/page": "app/(pages)/profile/page.js"
+  "/(pages)/profile/page": "app/(pages)/profile/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }

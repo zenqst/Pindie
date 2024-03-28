@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useStore } from "@store/app-store";
 
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
 import Styles from './Header.module.css';
 import { HeaderLink } from './HeaderLink';
@@ -18,6 +18,7 @@ export const Header = () => {
 	const [authPopupIsOpened, setAuthPopupIsOpened] = useState(false);
 	const { isAuth, logout } = useStore();
 	const pathName = usePathname();
+	const router = useRouter()
 
 	const openAuthPopup = () => {
 		setAuthPopupIsOpened(true);
@@ -28,7 +29,8 @@ export const Header = () => {
 	};
 
 	const handleLogout = () => {
-		logout();
+		router.push('/')
+		logout()
 	};
 
 	return (
