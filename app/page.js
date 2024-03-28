@@ -1,20 +1,14 @@
 'use client'
-
-import { useEffect } from 'react'
-
-import { endpoints } from '@api/config'
-import { authorize } from '@api/api-utils'
-
 import { Banner } from '@components/Banner/Banner';
-import { CardsList } from '@components/CardsList/CardsList';
+import { CardsListSection } from '@components/CardsListSection/CardsListSection';
 import { Promo } from '@components/Promo/Promo';
 
 export default function Home() {
 	return (
 		<main className='main'>
 			<Banner />
-			<CardsList title={'Популярные'} category={'popular'}/>
-			<CardsList title={'Новые'} category={'new'}/>
+			<CardsListSection title={'Популярные'} category={'popular'} type={'slider'}/>
+			<CardsListSection title={'Новые'} category={'new'} type={'slider'}/>
 			<Promo />
 		</main>
 	);

@@ -18,3 +18,29 @@ export const useGetDataByCategory = (endpoint, category) => {
 
     return { data, pending };
 };
+
+export const useAuth = () => {
+    const [isPending, setIsPending] = useState(false);
+    const [error, setError] = useState(null);
+    const [data, setData] = useState(null);
+
+    const fetchAuth = async (url, payload) => {
+        setIsPending(true);
+
+        const response = await fetch(`${endpoints.auth + url}`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload),
+        });
+        const data = await response.json();
+
+        if (!response.ok) setError(data.message[0].messages)
+        else setData(data);
+
+        setIsPending(false);
+
+        return data
+    };
+
+    return { isPending, data, error, fetchAuth };
+};

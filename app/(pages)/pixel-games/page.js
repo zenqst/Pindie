@@ -1,9 +1,9 @@
-import { CardsList } from '@components/CardsList/CardsList'
+import { CardsListSection } from '@components/CardsListSection/CardsListSection'
 
 export default function PixelGames() {
 	return(
 		<main className={"main-inner"}>
-			<CardsList category={'pixel'} title={'Пиксельные'}/>
+			<CardsListSection category={'pixel'} title={'Пиксельные'}/>
 		</main>
 	)
 }

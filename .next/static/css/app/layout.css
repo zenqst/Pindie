@@ -85,7 +85,25 @@
   transition: color 0.3s ease-in-out;
 }
 
+.Header_profileButton__lpVTB {
+  font-size: 30px;
+  font-family: 'Rubic One', sans-serif;
+  background-color: transparent;
+  border: none;
+  padding: 12px 20px 10px;
+  border-left: 4px solid black;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  transition: color 0.3s ease-in-out;
+  margin-right: 10px;
+}
+
 .Header_auth__button__7tPqk:hover {
+  color: #ffff00;
+}
+
+.Header_profileButton__lpVTB:hover{
   color: #ffff00;
 }
 
@@ -101,6 +119,10 @@
   }
 
   .Header_auth__button__7tPqk {
+    font-size: 20px;
+  }
+
+  .Header_profileButton__lpVTB {
     font-size: 20px;
   }
 }
@@ -131,6 +153,11 @@
   }
 
   .Header_auth__button__7tPqk {
+    width: 100%;
+    padding: 18px 20px 10px;
+  }
+
+  .Header_profileButton__lpVTB {
     width: 100%;
     padding: 18px 20px 10px;
   }
@@ -238,10 +265,15 @@
 }
 
 .AuthForm_formSubmit__HWrak:disabled {
-  opacity: .5;
+  background-color: #666;
+  color: #999;
   pointer-events: none;
 }
 
+.AuthForm_error__Wf_MV {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
 /*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/components/Overlay/Overlay.module.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************************************/

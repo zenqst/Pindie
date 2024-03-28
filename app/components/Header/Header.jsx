@@ -2,8 +2,6 @@
 import { useState } from 'react';
 import { useStore } from "@store/app-store";
 
-import { AuthContext } from "@context/app-context";
-
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -28,11 +26,11 @@ export const Header = () => {
 	const closeAuthPopup = () => {
 		setAuthPopupIsOpened(false);
 	};
-	
+
 	const handleLogout = () => {
-		logout()
-	}
-	
+		logout();
+	};
+
 	return (
 		<header className={Styles['header']}>
 			{pathName === "/" ? (
@@ -42,23 +40,29 @@ export const Header = () => {
 					<img className={Styles['logo__image']} src='/images/logo.svg' alt='Логотип Pindie' />
 				</Link>
 			)}
-					<nav className={Styles['menu']}>
-						<ul className={Styles['menu__list']}>
-							{categories.map((item, index) => (
+			<nav className={Styles['menu']}>
+				<ul className={Styles['menu__list']}>
+					{categories.map((item, index) => (
 						<HeaderLink {...item} key={index} />
 					))}
 				</ul>
 				<div className={Styles['auth']}>
 					{isAuth ? (
-						<button onClick={handleLogout} className={Styles['auth__button']}>
-							Выйти
-						</button>) : (
+						<>
+							<Link href={'/profile'} className={Styles.profileButton}>
+								Профиль
+							</Link>
+							<button onClick={handleLogout} className={Styles['auth__button']}>
+								Выйти
+							</button>
+						</>
+					) : (
 						<button onClick={openAuthPopup} className={Styles['auth__button']}>
 							Войти
 						</button>
 					)}
 				</div>
-					</nav>
+			</nav>
 			<Overlay isOpened={authPopupIsOpened} closePopup={closeAuthPopup} />
 			<Popup isOpened={authPopupIsOpened} closePopup={closeAuthPopup}>
 				<AuthForm closePopup={closeAuthPopup}/>

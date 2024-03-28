@@ -23,24 +23,6 @@ export const getGamesByCategory = async (url) => {
 	return await response
 }
 
-export const authorize = async (url, data) => {
-	try {
-		const response = await fetch(url, {
-			method: "POST",
-			headers: { "Content-Type": "application/json" },
-			body: JSON.stringify(data),
-		});
-		
-		if (response.status !== 200) {
-			throw new Error("Ошибка авторизации");
-		}
-		const result = await response.json();
-		return result;
-	} catch (error) {
-		return error;
-	}
-};
-
 export const requestUser = async (url, jwt) => {
 	try {
 		const response = await fetch(url, {
@@ -78,7 +60,7 @@ export const vote = async (url, jwt, usersArray) => {
 }
 
 export const isResponseOk = (response) => {
-	return response.user || response.username || response.id;
+	return !(response instanceof Error);
 }
 
 export const checkIfUserVoted = (game, userId) => {

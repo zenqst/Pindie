@@ -1,9 +1,9 @@
-import { CardsList } from '@components/CardsList/CardsList'
+import { CardsListSection } from '@components/CardsListSection/CardsListSection'
 
 export default function Tds() {
 	return(
 		<main className={"main-inner"}>
-			<CardsList category={'TDS'} title={'TDS'}/>
+			<CardsListSection category={'TDS'} title={'TDS'}/>
 		</main>
 	)
 }

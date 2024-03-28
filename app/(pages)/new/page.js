@@ -1,9 +1,9 @@
-import { CardsList } from '@components/CardsList/CardsList'
+import { CardsListSection } from "@components/CardsListSection/CardsListSection";
 
 export default function New() {
 	return(
 		<main className={"main-inner"}>
-			<CardsList category={'new'} title={'Новинки'}/>
+			<CardsListSection category={'new'} title={'Новинки'}/>
 		</main>
 	)
 }

@@ -1,0 +1,40 @@
+.mainInner{
+    margin: 0px 100px;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+    gap: 45px;
+    padding: 68px 120px;
+}
+
+.profileTitle:not(:first-of-type) {
+    margin-top: 40px;
+}
+
+.profileTitle {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 4px solid black;
+    padding: 20px 40px 14px;
+    position: relative;
+}
+
+.profileTitle::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 25px;
+    background-color: #ffff00;
+    width: 60px;
+    height: 45px;
+    z-index: -1;
+}
+
+.additionalInfo {
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-size: 25px;
+}

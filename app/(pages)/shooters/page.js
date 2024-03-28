@@ -1,9 +1,9 @@
-import { CardsList } from '@components/CardsList/CardsList'
+import { CardsListSection } from '@components/CardsListSection/CardsListSection'
 
 export default function Shooters() {
 	return(
 		<main className={"main-inner"}>
-			<CardsList category={'shooter'} title={'Шутеры'}/>
+			<CardsListSection category={'shooter'} title={'Шутеры'}/>
 		</main>
 	)
 }

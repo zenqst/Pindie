@@ -1,15 +1,15 @@
 'use client'
 import { useEffect, useState } from 'react'
 import { useStore } from "@store/app-store";
-
-import { authorize, isResponseOk, requestUser } from '@api/api-utils'
-import { endpoints } from '@api/config'
+import { useAuth } from "@api/hooks";
 
 import Styles from './AuthForm.module.css';
+import Link from "next/link";
 
 export const AuthForm = ({ closePopup }) => {
   const [authData, setAuthData] = useState({ identifier: "", password: "" })
-  const [message, setMessage] = useState({ status: null, text: null })
+
+  const { isPending, data, error, fetchAuth } = useAuth()
 
   const { user, login } = useStore();
   
@@ -29,35 +29,34 @@ export const AuthForm = ({ closePopup }) => {
   
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const userData = await authorize(endpoints.auth, authData);
-    
-    if (isResponseOk(userData)) {
-      login(userData.user, userData.jwt)
+    const { user, jwt } = await fetchAuth('/local', authData)
 
-      setMessage({ status: "success", text: "Вы авторизовались!" });
-    } else {
-      setMessage({ status: "error", text: "Неверные почта или пароль" });
-    }
+    if (!error) login(user, jwt)
   };
+
   
   return (
-    <form className={Styles.form} onSubmit={handleSubmit}>
-      <h2 className={Styles.formTitle}>Авторизация</h2>
-      <div className={Styles.formFields}>
-        <label className={Styles.formField}>
-          <span className={Styles.formFieldTitle}>Email</span>
-          <input className={Styles.formFieldInput} name="identifier" onInput={handleInput} type="email" placeholder="hello@world.com"/>
-        </label>
-        <label className={Styles.formField}>
-          <span className={Styles.formFieldTitle}>Пароль</span>
-          <input className={Styles.formFieldInput} name="password" onInput={handleInput} type="password" placeholder='***********'/>
-        </label>
-      </div>
-      {message.status && (<p className={Styles.formMessage}>{message.text}</p>)}
-      <div className={Styles.formActions}>
-        <button className={Styles.formReset} type="reset">Очистить</button>
-        <button className={Styles.formSubmit} type="submit">Войти</button>
-      </div>
-    </form>
-  ) 
+      <form className={Styles.form} onSubmit={handleSubmit}>
+        <h2 className={Styles.formTitle}>Авторизация</h2>
+        <div className={Styles.formFields}>
+          <label className={Styles.formField}>
+            <span className={Styles.formFieldTitle}>Email</span>
+            <input className={Styles.formFieldInput} required name="identifier" onInput={handleInput} type="email"
+                   placeholder="hello@world.com"/>
+          </label>
+          <label className={Styles.formField}>
+            <span className={Styles.formFieldTitle}>Пароль</span>
+            <input className={Styles.formFieldInput} required name="password" onInput={handleInput} type="password"
+                   placeholder='***********'/>
+          </label>
+        </div>
+        <p className={Styles.error}>{!error ? <Link href={'/register'}>Нет аккаунта? Зарегистрироваться</Link> : error && error.map((err, index) => (
+            <span key={index}> { err.message } </span>
+        ))}</p>
+        <div className={Styles.formActions}>
+          <button className={Styles.formSubmit} disabled={isPending}
+                  type="submit">{isPending ? "Загрузка..." : "Войти"}</button>
+        </div>
+      </form>
+  )
 };
