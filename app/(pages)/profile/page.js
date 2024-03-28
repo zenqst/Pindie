@@ -3,7 +3,7 @@ import Styles from './page.module.css'
 import { useStore } from "@store/app-store";
 
 export default function Profile() {
-    const user = useStore()
+    const { user } = useStore()
 
     return(
         <main className={Styles.mainInner}>
